@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DisneyNow Clone</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-dark text-white p-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">DisneyNow</div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#shows">Shows</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#movies">Movies</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#live">Live TV</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#login">Login</a></li>
+                  <li class="nav-item"><a class="nav-link text-white" href="knowledge.html">Animal Knowledge</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container mt-4">
+        <section id="home">
+            <div class="jumbotron text-center text-white bg-dark">
+                <h2>Welcome to DisneyNow</h2>
+                <p>Stream your favorite Disney shows and movies anytime, anywhere.</p>
+                <button class="btn btn-primary">Start Watching</button>
+            </div>
+        </section>
+        <section id="shows" class="content-section mb-4">
+            <h2 class="mb-3">Popular Shows</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="path/to/show1.jpg" class="card-img-top" alt="Show 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Show 1</h5>
+                            <div class="video-wrapper">
+                                <video id="video1" controls class="w-100">
+                                    <source src="pathtoshow1.mp4" type="video/mp4">
+                                    Browser Anda tidak mendukung pemutar video.
+                                </video>
+                                <button class="btn btn-secondary mt-2" onclick="toggleFullScreen('video1')">Full Screen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="path/to/show2.jpg" class="card-img-top" alt="Show 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Show 2</h5>
+                            <div class="video-wrapper">
+                                <video id="video2" controls class="w-100">
+                                    <source src="path/to/show2.mp4" type="video/mp4">
+                                    Browser Anda tidak mendukung pemutar video.
+                                </video>
+                                <button class="btn btn-secondary mt-2" onclick="toggleFullScreen('video2')">Full Screen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="path/to/show3.jpg" class="card-img-top" alt="Show 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Show 3</h5>
+                            <div class="video-wrapper">
+                                <video id="video3" controls class="w-100">
+                                    <source src="path/to/show3.mp4" type="video/mp4">
+                                    Browser Anda tidak mendukung pemutar video.
+                                </video>
+                                <button class="btn btn-secondary mt-2" onclick="toggleFullScreen('video3')">Full Screen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tambahkan lebih banyak kartu di sini -->
+            </div>
+        </section>
+        <section id="movies" class="content-section mb-4">
+            <h2 class="mb-3">Popular Movies</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="path/to/movie1.jpg" class="card-img-top" alt="Movie 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Movie 1</h5>
+                            <div class="video-wrapper">
+                                <video id="video4" controls class="w-100">
+                                    <source src="path/to/movie1.mp4" type="video/mp4">
+                                    Browser Anda tidak mendukung pemutar video.
+                                </video>
+                                <button class="btn btn-secondary mt-2" onclick="toggleFullScreen('video4')">Full Screen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="path/to/movie2.jpg" class="card-img-top" alt="Movie 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Movie 2</h5>
+                            <div class="video-wrapper">
+                                <video id="video5" controls class="w-100">
+                                    <source src="path/to/movie2.mp4" type="video/mp4">
+                                    Browser Anda tidak mendukung pemutar video.
+                                </video>
+                                <button class="btn btn-secondary mt-2" onclick="toggleFullScreen('video5')">Full Screen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="path/to/movie3.jpg" class="card-img-top" alt="Movie 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Movie 3</h5>
+                            <div class="video-wrapper">
+                                <video id="video6" controls class="w-100">
+                                    <source src="path/to/movie3.mp4" type="video/mp4">
+                                    Browser Anda tidak mendukung pemutar video.
+                                </video>
+                                <button class="btn btn-secondary mt-2" onclick="toggleFullScreen('video6')">Full Screen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tambahkan lebih banyak kartu di sini -->
+            </div>
+        </section>
+        <section id="live" class="content-section mb-4">
+            <h2 class="mb-3">Live TV</h2>
+            <p>Watch live TV channels and enjoy your favorite shows as they air.</p>
+            <button class="btn btn-primary">Watch Live</button>
+        </section>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 DisneyNow. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
